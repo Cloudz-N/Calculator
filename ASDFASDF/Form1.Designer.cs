@@ -75,7 +75,7 @@ namespace ASDFASDF
             this.two.Location = new System.Drawing.Point(69, 94);
             this.two.Name = "two";
             this.two.Size = new System.Drawing.Size(51, 47);
-            this.two.TabIndex = 2;
+            this.two.TabIndex = 3;
             this.two.Text = "2";
             this.two.UseVisualStyleBackColor = true;
             this.two.Click += new System.EventHandler(this.button2_Click);

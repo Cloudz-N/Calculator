@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nheil\\source\\repos\\ASDFASDF\\ASDFASDF\\ASDFASDF.csproj": {}
+    "C:\\Users\\Nheil\\Documents\\OOP_CODE_CALCULATOR\\Project\\Calculator\\ASDFASDF\\ASDFASDF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nheil\\source\\repos\\ASDFASDF\\ASDFASDF\\ASDFASDF.csproj": {
+    "C:\\Users\\Nheil\\Documents\\OOP_CODE_CALCULATOR\\Project\\Calculator\\ASDFASDF\\ASDFASDF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nheil\\source\\repos\\ASDFASDF\\ASDFASDF\\ASDFASDF.csproj",
+        "projectUniqueName": "C:\\Users\\Nheil\\Documents\\OOP_CODE_CALCULATOR\\Project\\Calculator\\ASDFASDF\\ASDFASDF.csproj",
         "projectName": "ASDFASDF",
-        "projectPath": "C:\\Users\\Nheil\\source\\repos\\ASDFASDF\\ASDFASDF\\ASDFASDF.csproj",
+        "projectPath": "C:\\Users\\Nheil\\Documents\\OOP_CODE_CALCULATOR\\Project\\Calculator\\ASDFASDF\\ASDFASDF.csproj",
         "packagesPath": "C:\\Users\\Nheil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nheil\\source\\repos\\ASDFASDF\\ASDFASDF\\obj\\",
+        "outputPath": "C:\\Users\\Nheil\\Documents\\OOP_CODE_CALCULATOR\\Project\\Calculator\\ASDFASDF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nheil\\AppData\\Roaming\\NuGet\\NuGet.Config",
