@@ -59,7 +59,7 @@ namespace ASDFASDF
             // 
             // one
             // 
-            this.one.Location = new System.Drawing.Point(12, 153);
+            this.one.Location = new System.Drawing.Point(12, 259);
             this.one.Name = "one";
             this.one.Size = new System.Drawing.Size(51, 47);
             this.one.TabIndex = 0;
@@ -78,7 +78,7 @@ namespace ASDFASDF
             // 
             // two
             // 
-            this.two.Location = new System.Drawing.Point(78, 153);
+            this.two.Location = new System.Drawing.Point(78, 259);
             this.two.Name = "two";
             this.two.Size = new System.Drawing.Size(51, 47);
             this.two.TabIndex = 3;
@@ -88,7 +88,7 @@ namespace ASDFASDF
             // 
             // three
             // 
-            this.three.Location = new System.Drawing.Point(146, 153);
+            this.three.Location = new System.Drawing.Point(146, 259);
             this.three.Name = "three";
             this.three.Size = new System.Drawing.Size(51, 47);
             this.three.TabIndex = 3;
@@ -128,7 +128,7 @@ namespace ASDFASDF
             // 
             // seven
             // 
-            this.seven.Location = new System.Drawing.Point(12, 259);
+            this.seven.Location = new System.Drawing.Point(12, 153);
             this.seven.Name = "seven";
             this.seven.Size = new System.Drawing.Size(51, 47);
             this.seven.TabIndex = 7;
@@ -138,7 +138,7 @@ namespace ASDFASDF
             // 
             // eight
             // 
-            this.eight.Location = new System.Drawing.Point(78, 259);
+            this.eight.Location = new System.Drawing.Point(78, 153);
             this.eight.Name = "eight";
             this.eight.Size = new System.Drawing.Size(51, 47);
             this.eight.TabIndex = 8;
@@ -148,7 +148,7 @@ namespace ASDFASDF
             // 
             // nine
             // 
-            this.nine.Location = new System.Drawing.Point(146, 259);
+            this.nine.Location = new System.Drawing.Point(146, 153);
             this.nine.Name = "nine";
             this.nine.Size = new System.Drawing.Size(51, 47);
             this.nine.TabIndex = 9;
@@ -183,10 +183,11 @@ namespace ASDFASDF
             this.clear.TabIndex = 12;
             this.clear.Text = "c";
             this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
             // percent
             // 
-            this.percent.Location = new System.Drawing.Point(78, 100);
+            this.percent.Location = new System.Drawing.Point(146, 100);
             this.percent.Name = "percent";
             this.percent.Size = new System.Drawing.Size(51, 47);
             this.percent.TabIndex = 13;
@@ -196,7 +197,7 @@ namespace ASDFASDF
             // 
             // delete
             // 
-            this.delete.Location = new System.Drawing.Point(146, 100);
+            this.delete.Location = new System.Drawing.Point(78, 100);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(51, 47);
             this.delete.TabIndex = 14;

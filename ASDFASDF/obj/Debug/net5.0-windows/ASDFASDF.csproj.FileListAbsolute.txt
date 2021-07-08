@@ -23,7 +23,6 @@ C:\Users\Nheil\Documents\OOP_CODE_CALCULATOR\Project\Calculator\ASDFASDF\bin\Deb
 C:\Users\Nheil\Documents\OOP_CODE_CALCULATOR\Project\Calculator\ASDFASDF\bin\Debug\net5.0-windows\ASDFASDF.dll
 C:\Users\Nheil\Documents\OOP_CODE_CALCULATOR\Project\Calculator\ASDFASDF\bin\Debug\net5.0-windows\ref\ASDFASDF.dll
 C:\Users\Nheil\Documents\OOP_CODE_CALCULATOR\Project\Calculator\ASDFASDF\bin\Debug\net5.0-windows\ASDFASDF.pdb
-C:\Users\Nheil\Documents\OOP_CODE_CALCULATOR\Project\Calculator\ASDFASDF\obj\Debug\net5.0-windows\ASDFASDF.csprojAssemblyReference.cache
 C:\Users\Nheil\Documents\OOP_CODE_CALCULATOR\Project\Calculator\ASDFASDF\obj\Debug\net5.0-windows\ASDFASDF.Form1.resources
 C:\Users\Nheil\Documents\OOP_CODE_CALCULATOR\Project\Calculator\ASDFASDF\obj\Debug\net5.0-windows\ASDFASDF.csproj.GenerateResource.cache
 C:\Users\Nheil\Documents\OOP_CODE_CALCULATOR\Project\Calculator\ASDFASDF\obj\Debug\net5.0-windows\ASDFASDF.GeneratedMSBuildEditorConfig.editorconfig
@@ -34,3 +33,4 @@ C:\Users\Nheil\Documents\OOP_CODE_CALCULATOR\Project\Calculator\ASDFASDF\obj\Deb
 C:\Users\Nheil\Documents\OOP_CODE_CALCULATOR\Project\Calculator\ASDFASDF\obj\Debug\net5.0-windows\ref\ASDFASDF.dll
 C:\Users\Nheil\Documents\OOP_CODE_CALCULATOR\Project\Calculator\ASDFASDF\obj\Debug\net5.0-windows\ASDFASDF.pdb
 C:\Users\Nheil\Documents\OOP_CODE_CALCULATOR\Project\Calculator\ASDFASDF\obj\Debug\net5.0-windows\ASDFASDF.genruntimeconfig.cache
+C:\Users\Nheil\Documents\OOP_CODE_CALCULATOR\Project\Calculator\ASDFASDF\obj\Debug\net5.0-windows\ASDFASDF.csproj.AssemblyReference.cache

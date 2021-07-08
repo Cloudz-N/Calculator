@@ -17,9 +17,15 @@ namespace ASDFASDF
             InitializeComponent();
         }
 
+        public void result(string[] args)
+        {
+            float Formula = 0;
+        }
+
         private void button7_Click(object sender, EventArgs e)
         {
             txtbx_op.Text = txtbx_op.Text + "7";
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -39,7 +45,14 @@ namespace ASDFASDF
 
         private void button14_Click(object sender, EventArgs e)
         {
+            try
+            {
+                txtbx_op.Text = txtbx_op.Text.Remove(txtbx_op.Text.Length - 1);
+            }
+            catch
+            {
 
+            }
         }
 
         private void button17_Click(object sender, EventArgs e)
@@ -110,6 +123,11 @@ namespace ASDFASDF
         private void equals_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void clear_Click(object sender, EventArgs e)
+        {
+            txtbx_op.Text = txtbx_op.Text = "";
         }
     }
 }
