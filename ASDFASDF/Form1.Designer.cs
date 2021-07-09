@@ -174,6 +174,7 @@ namespace ASDFASDF
             this.dot.TabIndex = 11;
             this.dot.Text = ".";
             this.dot.UseVisualStyleBackColor = true;
+            this.dot.Click += new System.EventHandler(this.dot_Click);
             // 
             // clear
             // 
@@ -207,11 +208,12 @@ namespace ASDFASDF
             // 
             // div
             // 
+            this.div.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.div.Location = new System.Drawing.Point(215, 100);
             this.div.Name = "div";
             this.div.Size = new System.Drawing.Size(51, 47);
             this.div.TabIndex = 15;
-            this.div.Text = "/";
+            this.div.Text = "÷";
             this.div.UseVisualStyleBackColor = true;
             this.div.Click += new System.EventHandler(this.button15_Click);
             // 
