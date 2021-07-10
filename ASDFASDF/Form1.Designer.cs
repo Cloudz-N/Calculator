@@ -344,7 +344,7 @@ namespace ASDFASDF
             this.Controls.Add(this.txtbx_op);
             this.Controls.Add(this.one);
             this.Name = "Form1";
-            this.Text = "Calculator";
+            this.Text = "`";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

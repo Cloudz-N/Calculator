@@ -1,23 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text;
 
 namespace ASDFASDF
 {
     public partial class Form1 : Form
     {
+        StringBuilder cfn = new StringBuilder();
+        float[] nums = new float[2];
+
         public bool Main()
         {
             bool count = txtbx_op.Text.Length >= 1;
             return count;
         }
 
+        /// checking operations
         public bool syn()
         {
             if (txtbx_op.Text == "X")
@@ -42,7 +40,80 @@ namespace ASDFASDF
             }
         }
 
-        StringBuilder eq = new StringBuilder();
+        public bool test()
+        {
+            if (syn() == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public void btn1(string num1)
+        {
+            if (test() == false)
+            {
+                if (syn() == true)
+                {
+                    txtbx_op.Text = num1;
+                    nums[0] = float.Parse(num1);
+                }
+                else
+                {
+                    txtbx_op.Text = txtbx_op.Text + num1;
+                    nums[0] = float.Parse(num1);
+                }
+                MessageBox.Show("first");
+            }
+            else
+            {
+                if (syn() == true)
+                {
+                    txtbx_op.Text = num1;
+                    nums[1] = float.Parse(num1);
+                }
+                else
+                {
+                    txtbx_op.Text = txtbx_op.Text + num1;
+                    nums[1] = float.Parse(num1);
+                }
+                MessageBox.Show("second");
+            }
+        }
+
+        /// 1 = ÷, 2 = X, 3 = +, 4 = -
+        public string formula()
+        {
+            string cfn1 = cfn.ToString();
+            int cfn2 = int.Parse(cfn1);
+            if (cfn2 == 1)
+            {
+                float ans = nums[0] / nums[1];
+                return ans.ToString();
+            }
+            if (cfn2 == 2)
+            {
+                float ans = nums[0] * nums[1];
+                return ans.ToString();
+            }
+            if (cfn2 == 3)
+            {
+                float ans = nums[0] + nums[1];
+                return ans.ToString();
+            }
+            if (cfn2 == 4)
+            {
+                float ans = nums[0] - nums[1];
+                return ans.ToString();
+            }
+            else
+            {
+                return "Syntax Error";
+            }
+        }
 
         public Form1()
         {
@@ -51,16 +122,9 @@ namespace ASDFASDF
 
         private void button7_Click(object sender, EventArgs e)
         {
-            if (syn() == true)
-            {
-                txtbx_op.Text = txtbx_op.Text = "7";
-                eq.Append(7);
-            }
-            else
-            {
-                txtbx_op.Text = txtbx_op.Text + "7";
-                eq.Append(7);
-            }
+            String btn = (sender as Button).Text;
+            string btn2 = btn.ToString();
+            btn1(btn2);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -70,16 +134,9 @@ namespace ASDFASDF
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (syn() == true)
-            {
-                txtbx_op.Text = txtbx_op.Text = "2";
-                eq.Append(2);
-            }
-            else
-            {
-                txtbx_op.Text = txtbx_op.Text + "2";
-                eq.Append(2);
-            }
+            String btn = (sender as Button).Text;
+            string btn2 = btn.ToString();
+            btn1(btn2);
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -104,7 +161,8 @@ namespace ASDFASDF
             if (Main())
             {
                 txtbx_op.Text = txtbx_op.Text = "-";
-                eq.Append("-");
+                cfn.Clear();
+                cfn.Append(4);
             }
         }
 
@@ -118,138 +176,65 @@ namespace ASDFASDF
             if (Main())
             {
                 txtbx_op.Text = txtbx_op.Text = "÷";
-                eq.Append("/");
+                cfn.Clear();
+                cfn.Append(1);
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            {
-                if (syn() == true)
-                {
-                    txtbx_op.Text = txtbx_op.Text = "1";
-                    eq.Append(1);
-                }
-                else
-                {
-                    txtbx_op.Text = txtbx_op.Text + "1";
-                    eq.Append(1);
-                }
-            }
+            String btn = (sender as Button).Text;
+            string btn2 = btn.ToString();
+            btn1(btn2);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            {
-                if (syn() == true)
-                {
-                    txtbx_op.Text = txtbx_op.Text = "5";
-                    eq.Append(5);
-                }
-                else
-                {
-                    txtbx_op.Text = txtbx_op.Text + "5";
-                    eq.Append(5);
-                }
-            }
+            String btn = (sender as Button).Text;
+            string btn2 = btn.ToString();
+            btn1(btn2);
         }
 
         private void three_Click(object sender, EventArgs e)
         {
-            {
-                if (syn() == true)
-                {
-                    txtbx_op.Text = txtbx_op.Text = "3";
-                    eq.Append(3);
-                }
-                else
-                {
-                    txtbx_op.Text = txtbx_op.Text + "3";
-                    eq.Append(3);
-                }
-            }
+            String btn = (sender as Button).Text;
+            string btn2 = btn.ToString();
+            btn1(btn2);
         }
 
         private void four_Click(object sender, EventArgs e)
         {
-            {
-                if (syn() == true)
-                {
-                    txtbx_op.Text = txtbx_op.Text = "4";
-                    eq.Append(4);
-                }
-                else
-                {
-                    txtbx_op.Text = txtbx_op.Text + "4";
-                    eq.Append(4);
-                }
-            }
+            String btn = (sender as Button).Text;
+            string btn2 = btn.ToString();
+            btn1(btn2);
         }
 
         private void six_Click(object sender, EventArgs e)
         {
-            {
-                if (syn() == true)
-                {
-                    txtbx_op.Text = txtbx_op.Text = "6";
-                    eq.Append(6);
-                }
-                else
-                {
-                    txtbx_op.Text = txtbx_op.Text + "6";
-                    eq.Append(6);
-                }
-            }
+            String btn = (sender as Button).Text;
+            string btn2 = btn.ToString();
+            btn1(btn2);
         }
 
         private void eight_Click(object sender, EventArgs e)
         {
-            {
-                if (syn() == true)
-                {
-                    txtbx_op.Text = txtbx_op.Text = "8";
-                    eq.Append(8);
-                }
-                else
-                {
-                    txtbx_op.Text = txtbx_op.Text + "8";
-                    eq.Append(8);
-                }
-            }
+            String btn = (sender as Button).Text;
+            string btn2 = btn.ToString();
+            btn1(btn2);
         }
 
         private void nine_Click(object sender, EventArgs e)
         {
-
-            {
-                if (syn() == true)
-                {
-                    txtbx_op.Text = txtbx_op.Text = "9";
-                    eq.Append(9);
-                }
-                else
-                {
-                    txtbx_op.Text = txtbx_op.Text + "9";
-                    eq.Append(9);
-                }
-            }
+            String btn = (sender as Button).Text;
+            string btn2 = btn.ToString();
+            btn1(btn2);
         }
 
         private void zero_Click(object sender, EventArgs e)
         {
-            if (Main())
-            {
-                if (syn() == true)
-                {
-                    txtbx_op.Text = txtbx_op.Text = "0";
-                    eq.Append(0);
-                }
-                else
-                {
-                    txtbx_op.Text = txtbx_op.Text + "0";
-                    eq.Append(0);
-                }
-            }
+            String btn = (sender as Button).Text;
+            string btn2 = btn.ToString();
+            btn1(btn2);
         }
 
         private void mul_Click(object sender, EventArgs e)
@@ -257,7 +242,8 @@ namespace ASDFASDF
             if (Main())
             {
                 txtbx_op.Text = txtbx_op.Text = "X";
-                eq.Append("*");
+                cfn.Clear();
+                cfn.Append(2);
             }
         }
 
@@ -266,13 +252,15 @@ namespace ASDFASDF
             if (Main())
             {
                 txtbx_op.Text = txtbx_op.Text = "+";
-                eq.Append("+");
+                cfn.Clear();
+                cfn.Append(3);
             }
         }
 
         private void equals_Click(object sender, EventArgs e)
         {
-
+            string ans = nums[0].ToString();
+            txtbx_op.Text = ans;
         }
 
         private void clear_Click(object sender, EventArgs e)
