@@ -7,6 +7,7 @@ namespace ASDFASDF
     public partial class Form1 : Form
     {
         StringBuilder cfn = new StringBuilder();
+        bool checker = false;
         float[] nums = new float[2];
 
         public bool Main()
@@ -43,7 +44,7 @@ namespace ASDFASDF
         public bool test()
         {
             if (syn() == true)
-            {
+            {   
                 return true;
             }
             else
@@ -54,7 +55,7 @@ namespace ASDFASDF
 
         public void btn1(string num1)
         {
-            if (test() == false)
+            if (test() == checker)
             {
                 if (syn() == true)
                 {
@@ -80,6 +81,7 @@ namespace ASDFASDF
                     txtbx_op.Text = txtbx_op.Text + num1;
                     nums[1] = float.Parse(num1);
                 }
+                checker = true;
                 MessageBox.Show("second");
             }
         }
@@ -92,22 +94,26 @@ namespace ASDFASDF
             if (cfn2 == 1)
             {
                 float ans = nums[0] / nums[1];
-                return ans.ToString();
+                nums[0] = ans;
+                return nums[0].ToString();
             }
             if (cfn2 == 2)
             {
                 float ans = nums[0] * nums[1];
-                return ans.ToString();
+                nums[0] = ans;
+                return nums[0].ToString();
             }
             if (cfn2 == 3)
             {
                 float ans = nums[0] + nums[1];
-                return ans.ToString();
+                nums[0] = ans;
+                return nums[0].ToString();
             }
             if (cfn2 == 4)
             {
                 float ans = nums[0] - nums[1];
-                return ans.ToString();
+                nums[0] = ans;
+                return nums[0].ToString();
             }
             else
             {
@@ -259,12 +265,13 @@ namespace ASDFASDF
 
         private void equals_Click(object sender, EventArgs e)
         {
-            string ans = nums[0].ToString();
-            txtbx_op.Text = ans;
+            txtbx_op.Text = formula();
+            cfn.Clear();
         }
 
         private void clear_Click(object sender, EventArgs e)
         {
+            checker = false;
             txtbx_op.Text = txtbx_op.Text = "";
         }
 
