@@ -57,68 +57,80 @@ namespace ASDFASDF
         {
             if (test() == checker)
             {
+                /// remove this
                 if (syn() == true)
                 {
                     txtbx_op.Text = num1;
                     nums[0] = float.Parse(num1);
+                    MessageBox.Show(nums[0].ToString(), "first_1");
                 }
+                /// up to this
                 else
                 {
                     txtbx_op.Text = txtbx_op.Text + num1;
-                    nums[0] = float.Parse(num1);
+                    nums[0] = float.Parse(txtbx_op.Text);
+                    MessageBox.Show(nums[0].ToString(), "first_2");
                 }
-                MessageBox.Show("first");
             }
             else
             {
                 if (syn() == true)
                 {
                     txtbx_op.Text = num1;
-                    nums[1] = float.Parse(num1);
+                    nums[1] = float.Parse(txtbx_op.Text);
+                    MessageBox.Show(nums[1].ToString(), "second_1");
                 }
                 else
                 {
                     txtbx_op.Text = txtbx_op.Text + num1;
-                    nums[1] = float.Parse(num1);
+                    nums[1] = float.Parse(txtbx_op.Text);
+                    MessageBox.Show(nums[1].ToString(), "second_2");
                 }
                 checker = true;
-                MessageBox.Show("second");
             }
         }
 
         /// 1 = ÷, 2 = X, 3 = +, 4 = -
         public string formula()
         {
-            string cfn1 = cfn.ToString();
-            int cfn2 = int.Parse(cfn1);
-            if (cfn2 == 1)
+            try
             {
-                float ans = nums[0] / nums[1];
-                nums[0] = ans;
-                return nums[0].ToString();
+                string cfn1 = cfn.ToString();
+                int cfn2 = int.Parse(cfn1);
+                if (cfn2 == 1)
+                {
+                    float ans = nums[0] / nums[1];
+                    nums[0] = ans;
+                    return nums[0].ToString();
+                }
+                if (cfn2 == 2)
+                {
+                    float ans = nums[0] * nums[1];
+                    nums[0] = ans;
+                    return nums[0].ToString();
+                }
+                if (cfn2 == 3)
+                {
+                    float ans = nums[0] + nums[1];
+                    nums[0] = ans;
+                    return nums[0].ToString();
+                }
+                if (cfn2 == 4)
+                {
+                    float ans = nums[0] - nums[1];
+                    nums[0] = ans;
+                    return nums[0].ToString();
+                }
+                else
+                {
+                    return "Syntax Error";
+                }
             }
-            if (cfn2 == 2)
+            catch (Exception)
             {
-                float ans = nums[0] * nums[1];
-                nums[0] = ans;
-                return nums[0].ToString();
+
             }
-            if (cfn2 == 3)
-            {
-                float ans = nums[0] + nums[1];
-                nums[0] = ans;
-                return nums[0].ToString();
-            }
-            if (cfn2 == 4)
-            {
-                float ans = nums[0] - nums[1];
-                nums[0] = ans;
-                return nums[0].ToString();
-            }
-            else
-            {
-                return "Syntax Error";
-            }
+            return "";
         }
 
         public Form1()
@@ -166,7 +178,7 @@ namespace ASDFASDF
         {
             if (Main())
             {
-                txtbx_op.Text = txtbx_op.Text = "-";
+                txtbx_op.Text = "-";
                 cfn.Clear();
                 cfn.Append(4);
             }
@@ -181,7 +193,7 @@ namespace ASDFASDF
         {
             if (Main())
             {
-                txtbx_op.Text = txtbx_op.Text = "÷";
+                txtbx_op.Text = "÷";
                 cfn.Clear();
                 cfn.Append(1);
             }
@@ -247,7 +259,7 @@ namespace ASDFASDF
         {
             if (Main())
             {
-                txtbx_op.Text = txtbx_op.Text = "X";
+                txtbx_op.Text = "X";
                 cfn.Clear();
                 cfn.Append(2);
             }
@@ -257,7 +269,7 @@ namespace ASDFASDF
         {
             if (Main())
             {
-                txtbx_op.Text = txtbx_op.Text = "+";
+                txtbx_op.Text = "+";
                 cfn.Clear();
                 cfn.Append(3);
             }
@@ -272,7 +284,7 @@ namespace ASDFASDF
         private void clear_Click(object sender, EventArgs e)
         {
             checker = false;
-            txtbx_op.Text = txtbx_op.Text = "";
+            txtbx_op.Text = "";
         }
 
         private void dot_Click(object sender, EventArgs e)
