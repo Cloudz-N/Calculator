@@ -57,19 +57,15 @@ namespace ASDFASDF
         {
             if (test() == checker)
             {
-                /// remove this
                 if (syn() == true)
                 {
                     txtbx_op.Text = num1;
-                    nums[0] = float.Parse(num1);
-                    MessageBox.Show(nums[0].ToString(), "first_1");
+                    nums[1] = float.Parse(txtbx_op.Text);
                 }
-                /// up to this
                 else
                 {
                     txtbx_op.Text = txtbx_op.Text + num1;
                     nums[0] = float.Parse(txtbx_op.Text);
-                    MessageBox.Show(nums[0].ToString(), "first_2");
                 }
             }
             else
@@ -78,19 +74,17 @@ namespace ASDFASDF
                 {
                     txtbx_op.Text = num1;
                     nums[1] = float.Parse(txtbx_op.Text);
-                    MessageBox.Show(nums[1].ToString(), "second_1");
                 }
                 else
                 {
                     txtbx_op.Text = txtbx_op.Text + num1;
                     nums[1] = float.Parse(txtbx_op.Text);
-                    MessageBox.Show(nums[1].ToString(), "second_2");
                 }
                 checker = true;
             }
         }
 
-        /// 1 = ÷, 2 = X, 3 = +, 4 = -
+        /// 1 = ÷, 2 = X, 3 = +, 4 = -,
         public string formula()
         {
             try
@@ -120,10 +114,6 @@ namespace ASDFASDF
                     float ans = nums[0] - nums[1];
                     nums[0] = ans;
                     return nums[0].ToString();
-                }
-                else
-                {
-                    return "Syntax Error";
                 }
             }
             catch (Exception)
@@ -159,7 +149,8 @@ namespace ASDFASDF
 
         private void button13_Click(object sender, EventArgs e)
         {
-
+            nums[0] = float.Parse(txtbx_op.Text) / 100;
+            txtbx_op.Text = nums[0].ToString();
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -277,19 +268,56 @@ namespace ASDFASDF
 
         private void equals_Click(object sender, EventArgs e)
         {
-            txtbx_op.Text = formula();
-            cfn.Clear();
+            try
+            {
+                txtbx_op.Text = formula();
+                nums[0] = float.Parse(txtbx_op.Text);
+                cfn.Clear();
+                cfn.Append(txtbx_op.Text);
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
         private void clear_Click(object sender, EventArgs e)
         {
             checker = false;
+            Array.Clear(nums, 0, 2);
+            Array.Clear(nums, 1, 1);
+            cfn.Clear();
             txtbx_op.Text = "";
         }
 
         private void dot_Click(object sender, EventArgs e)
         {
+            String btn = (sender as Button).Text;
+            string btn2 = btn.ToString();
+            btn1(btn2);
+        }
 
+        private void C_txt_Click(object sender, EventArgs e)
+        {
+            txtbx_op.Text = "";
+        }
+
+        private void sqrt_Click(object sender, EventArgs e)
+        {
+            txtbx_op.Text = Math.Sqrt(float.Parse(txtbx_op.Text)).ToString();
+            nums[1] = float.Parse(txtbx_op.Text);
+        }
+
+        private void sqrd_Click(object sender, EventArgs e)
+        {
+            txtbx_op.Text = Math.Pow(float.Parse(txtbx_op.Text), 2).ToString();
+            nums[1] = float.Parse(txtbx_op.Text);
+        }
+
+        private void over_Click(object sender, EventArgs e)
+        {
+            txtbx_op.Text = (1 / float.Parse(txtbx_op.Text)).ToString();
+            nums[1] = float.Parse(txtbx_op.Text);
         }
     }
 }
