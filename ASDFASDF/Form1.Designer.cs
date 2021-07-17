@@ -49,11 +49,6 @@ namespace ASDFASDF
             this.sub = new System.Windows.Forms.Button();
             this.add = new System.Windows.Forms.Button();
             this.equals = new System.Windows.Forms.Button();
-            this.MC = new System.Windows.Forms.Button();
-            this.MR = new System.Windows.Forms.Button();
-            this.M_ADD = new System.Windows.Forms.Button();
-            this.M_SUB = new System.Windows.Forms.Button();
-            this.MS = new System.Windows.Forms.Button();
             this.C_txt = new System.Windows.Forms.Button();
             this.over = new System.Windows.Forms.Button();
             this.sqrd = new System.Windows.Forms.Button();
@@ -62,7 +57,7 @@ namespace ASDFASDF
             // 
             // one
             // 
-            this.one.Location = new System.Drawing.Point(12, 310);
+            this.one.Location = new System.Drawing.Point(12, 253);
             this.one.Name = "one";
             this.one.Size = new System.Drawing.Size(51, 47);
             this.one.TabIndex = 0;
@@ -72,16 +67,16 @@ namespace ASDFASDF
             // 
             // txtbx_op
             // 
-            this.txtbx_op.Location = new System.Drawing.Point(12, 23);
+            this.txtbx_op.Location = new System.Drawing.Point(12, 12);
             this.txtbx_op.Name = "txtbx_op";
             this.txtbx_op.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtbx_op.Size = new System.Drawing.Size(251, 23);
+            this.txtbx_op.Size = new System.Drawing.Size(254, 23);
             this.txtbx_op.TabIndex = 1;
             this.txtbx_op.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // two
             // 
-            this.two.Location = new System.Drawing.Point(78, 310);
+            this.two.Location = new System.Drawing.Point(78, 253);
             this.two.Name = "two";
             this.two.Size = new System.Drawing.Size(51, 47);
             this.two.TabIndex = 3;
@@ -91,7 +86,7 @@ namespace ASDFASDF
             // 
             // three
             // 
-            this.three.Location = new System.Drawing.Point(146, 310);
+            this.three.Location = new System.Drawing.Point(146, 253);
             this.three.Name = "three";
             this.three.Size = new System.Drawing.Size(51, 47);
             this.three.TabIndex = 3;
@@ -101,7 +96,7 @@ namespace ASDFASDF
             // 
             // four
             // 
-            this.four.Location = new System.Drawing.Point(12, 257);
+            this.four.Location = new System.Drawing.Point(12, 200);
             this.four.Name = "four";
             this.four.Size = new System.Drawing.Size(51, 47);
             this.four.TabIndex = 4;
@@ -111,7 +106,7 @@ namespace ASDFASDF
             // 
             // five
             // 
-            this.five.Location = new System.Drawing.Point(78, 257);
+            this.five.Location = new System.Drawing.Point(78, 200);
             this.five.Name = "five";
             this.five.Size = new System.Drawing.Size(51, 47);
             this.five.TabIndex = 5;
@@ -121,7 +116,7 @@ namespace ASDFASDF
             // 
             // six
             // 
-            this.six.Location = new System.Drawing.Point(146, 257);
+            this.six.Location = new System.Drawing.Point(146, 200);
             this.six.Name = "six";
             this.six.Size = new System.Drawing.Size(51, 47);
             this.six.TabIndex = 6;
@@ -131,7 +126,7 @@ namespace ASDFASDF
             // 
             // seven
             // 
-            this.seven.Location = new System.Drawing.Point(12, 204);
+            this.seven.Location = new System.Drawing.Point(12, 147);
             this.seven.Name = "seven";
             this.seven.Size = new System.Drawing.Size(51, 47);
             this.seven.TabIndex = 7;
@@ -141,7 +136,7 @@ namespace ASDFASDF
             // 
             // eight
             // 
-            this.eight.Location = new System.Drawing.Point(78, 204);
+            this.eight.Location = new System.Drawing.Point(78, 147);
             this.eight.Name = "eight";
             this.eight.Size = new System.Drawing.Size(51, 47);
             this.eight.TabIndex = 8;
@@ -151,7 +146,7 @@ namespace ASDFASDF
             // 
             // nine
             // 
-            this.nine.Location = new System.Drawing.Point(146, 204);
+            this.nine.Location = new System.Drawing.Point(146, 147);
             this.nine.Name = "nine";
             this.nine.Size = new System.Drawing.Size(51, 47);
             this.nine.TabIndex = 9;
@@ -161,9 +156,9 @@ namespace ASDFASDF
             // 
             // zero
             // 
-            this.zero.Location = new System.Drawing.Point(12, 363);
+            this.zero.Location = new System.Drawing.Point(12, 306);
             this.zero.Name = "zero";
-            this.zero.Size = new System.Drawing.Size(117, 47);
+            this.zero.Size = new System.Drawing.Size(51, 47);
             this.zero.TabIndex = 10;
             this.zero.Text = "0";
             this.zero.UseVisualStyleBackColor = true;
@@ -171,7 +166,7 @@ namespace ASDFASDF
             // 
             // dot
             // 
-            this.dot.Location = new System.Drawing.Point(146, 363);
+            this.dot.Location = new System.Drawing.Point(78, 306);
             this.dot.Name = "dot";
             this.dot.Size = new System.Drawing.Size(51, 47);
             this.dot.TabIndex = 11;
@@ -181,7 +176,7 @@ namespace ASDFASDF
             // 
             // clear
             // 
-            this.clear.Location = new System.Drawing.Point(12, 151);
+            this.clear.Location = new System.Drawing.Point(12, 94);
             this.clear.Name = "clear";
             this.clear.Size = new System.Drawing.Size(51, 47);
             this.clear.TabIndex = 12;
@@ -191,7 +186,7 @@ namespace ASDFASDF
             // 
             // percent
             // 
-            this.percent.Location = new System.Drawing.Point(12, 98);
+            this.percent.Location = new System.Drawing.Point(12, 41);
             this.percent.Name = "percent";
             this.percent.Size = new System.Drawing.Size(51, 47);
             this.percent.TabIndex = 13;
@@ -202,7 +197,7 @@ namespace ASDFASDF
             // delete
             // 
             this.delete.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.delete.Location = new System.Drawing.Point(146, 151);
+            this.delete.Location = new System.Drawing.Point(146, 94);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(51, 47);
             this.delete.TabIndex = 14;
@@ -213,7 +208,7 @@ namespace ASDFASDF
             // div
             // 
             this.div.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.div.Location = new System.Drawing.Point(215, 151);
+            this.div.Location = new System.Drawing.Point(215, 94);
             this.div.Name = "div";
             this.div.Size = new System.Drawing.Size(51, 47);
             this.div.TabIndex = 15;
@@ -223,7 +218,7 @@ namespace ASDFASDF
             // 
             // mul
             // 
-            this.mul.Location = new System.Drawing.Point(215, 204);
+            this.mul.Location = new System.Drawing.Point(215, 147);
             this.mul.Name = "mul";
             this.mul.Size = new System.Drawing.Size(51, 47);
             this.mul.TabIndex = 16;
@@ -233,7 +228,7 @@ namespace ASDFASDF
             // 
             // sub
             // 
-            this.sub.Location = new System.Drawing.Point(215, 257);
+            this.sub.Location = new System.Drawing.Point(215, 200);
             this.sub.Name = "sub";
             this.sub.Size = new System.Drawing.Size(51, 47);
             this.sub.TabIndex = 17;
@@ -244,7 +239,7 @@ namespace ASDFASDF
             // add
             // 
             this.add.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.add.Location = new System.Drawing.Point(215, 310);
+            this.add.Location = new System.Drawing.Point(215, 253);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(51, 47);
             this.add.TabIndex = 18;
@@ -254,62 +249,17 @@ namespace ASDFASDF
             // 
             // equals
             // 
-            this.equals.Location = new System.Drawing.Point(215, 363);
+            this.equals.Location = new System.Drawing.Point(146, 306);
             this.equals.Name = "equals";
-            this.equals.Size = new System.Drawing.Size(51, 47);
+            this.equals.Size = new System.Drawing.Size(120, 47);
             this.equals.TabIndex = 19;
             this.equals.Text = "=";
             this.equals.UseVisualStyleBackColor = true;
             this.equals.Click += new System.EventHandler(this.equals_Click);
             // 
-            // MC
-            // 
-            this.MC.Location = new System.Drawing.Point(21, 66);
-            this.MC.Name = "MC";
-            this.MC.Size = new System.Drawing.Size(42, 26);
-            this.MC.TabIndex = 20;
-            this.MC.Text = "MC";
-            this.MC.UseVisualStyleBackColor = true;
-            // 
-            // MR
-            // 
-            this.MR.Location = new System.Drawing.Point(71, 66);
-            this.MR.Name = "MR";
-            this.MR.Size = new System.Drawing.Size(42, 26);
-            this.MR.TabIndex = 21;
-            this.MR.Text = "MR";
-            this.MR.UseVisualStyleBackColor = true;
-            // 
-            // M_ADD
-            // 
-            this.M_ADD.Location = new System.Drawing.Point(119, 66);
-            this.M_ADD.Name = "M_ADD";
-            this.M_ADD.Size = new System.Drawing.Size(42, 26);
-            this.M_ADD.TabIndex = 22;
-            this.M_ADD.Text = "M+";
-            this.M_ADD.UseVisualStyleBackColor = true;
-            // 
-            // M_SUB
-            // 
-            this.M_SUB.Location = new System.Drawing.Point(167, 66);
-            this.M_SUB.Name = "M_SUB";
-            this.M_SUB.Size = new System.Drawing.Size(42, 26);
-            this.M_SUB.TabIndex = 23;
-            this.M_SUB.Text = "M-";
-            this.M_SUB.UseVisualStyleBackColor = true;
-            // 
-            // MS
-            // 
-            this.MS.Location = new System.Drawing.Point(215, 66);
-            this.MS.Name = "MS";
-            this.MS.Size = new System.Drawing.Size(41, 26);
-            this.MS.TabIndex = 24;
-            this.MS.Text = "MS";
-            this.MS.UseVisualStyleBackColor = true;
-            // 
             // C_txt
             // 
-            this.C_txt.Location = new System.Drawing.Point(78, 151);
+            this.C_txt.Location = new System.Drawing.Point(78, 94);
             this.C_txt.Name = "C_txt";
             this.C_txt.Size = new System.Drawing.Size(51, 47);
             this.C_txt.TabIndex = 26;
@@ -319,7 +269,7 @@ namespace ASDFASDF
             // 
             // over
             // 
-            this.over.Location = new System.Drawing.Point(78, 100);
+            this.over.Location = new System.Drawing.Point(78, 41);
             this.over.Name = "over";
             this.over.Size = new System.Drawing.Size(51, 45);
             this.over.TabIndex = 27;
@@ -330,7 +280,7 @@ namespace ASDFASDF
             // sqrd
             // 
             this.sqrd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.sqrd.Location = new System.Drawing.Point(146, 100);
+            this.sqrd.Location = new System.Drawing.Point(146, 41);
             this.sqrd.Name = "sqrd";
             this.sqrd.Size = new System.Drawing.Size(51, 45);
             this.sqrd.TabIndex = 28;
@@ -340,7 +290,7 @@ namespace ASDFASDF
             // 
             // sqrt
             // 
-            this.sqrt.Location = new System.Drawing.Point(215, 100);
+            this.sqrt.Location = new System.Drawing.Point(215, 41);
             this.sqrt.Name = "sqrt";
             this.sqrt.Size = new System.Drawing.Size(51, 45);
             this.sqrt.TabIndex = 29;
@@ -357,11 +307,6 @@ namespace ASDFASDF
             this.Controls.Add(this.sqrd);
             this.Controls.Add(this.over);
             this.Controls.Add(this.C_txt);
-            this.Controls.Add(this.MS);
-            this.Controls.Add(this.M_SUB);
-            this.Controls.Add(this.M_ADD);
-            this.Controls.Add(this.MR);
-            this.Controls.Add(this.MC);
             this.Controls.Add(this.equals);
             this.Controls.Add(this.add);
             this.Controls.Add(this.sub);
@@ -412,11 +357,6 @@ namespace ASDFASDF
         private System.Windows.Forms.Button sub;
         private System.Windows.Forms.Button add;
         private System.Windows.Forms.Button equals;
-        private System.Windows.Forms.Button MC;
-        private System.Windows.Forms.Button MR;
-        private System.Windows.Forms.Button M_ADD;
-        private System.Windows.Forms.Button M_SUB;
-        private System.Windows.Forms.Button MS;
         private System.Windows.Forms.Button C_txt;
         private System.Windows.Forms.Button over;
         private System.Windows.Forms.Button sqrd;
